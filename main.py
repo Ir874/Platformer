@@ -27,12 +27,12 @@ while running == True:
             running == False
             sys.exit()
     # Screen fill
-    display_surface.fill(white)
+    screen.fill(white)
     
     # Draw sprites onto screen
     pygame.draw.rect(screen, blue, player)
     
-
+    pygame.display.flip() # Update the screen
 
     clock.tick(60) # Set framerate of 60 fps
     
